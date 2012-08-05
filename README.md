@@ -4,14 +4,22 @@ Saas-boilerplate
 A Boilerplate pattern for start with Saas
 
 #Installation Sass
-'gem install sass '
+<pre>
+  gem install sass 
+</pre>
 
 ##Compile style.scss to style.css
-'sass --watch style.scss:style.css'
+<pre>
+  sass --watch style.scss:style.css
+</pre>
+
 
 Optional :
 #Installation Compass
-'gem install compass'
-
+<pre>
+  gem install compass
+</pre>
 ##Compile style.scss to style.css
-'compass watch'
+<pre>
+  compass watch
+</pre>
