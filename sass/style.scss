@@ -7,7 +7,7 @@
 @import "library/_reset.scss";
 
 @import "partials/_base.scss";
-@import "partials/_sprite.scss";
+@import "partials/_ui.scss";
 @import "partials/_button.scss";
 @import "partials/_form.scss";
 @import "partials/_header.scss";
@@ -16,7 +16,10 @@
 @import "views/_home.scss";
 @import "views/_contact.scss";
 
-@import "medias/_responsive.scss";
+@import "medias/_960.scss";
+@import "medias/_768.scss";
+@import "medias/_480.scss";
+
 @import "medias/_print.scss";
 
 

@@ -4,4 +4,44 @@ $blue: #00F;
 $red: #F00;
 $green: #0F0;
 
+$font-bold: 'gibson_lightbold';
+$font-regular: 'gibsonregular';
+$font-light: 'gibson_lightregular';
+$font-icon : 'icon';
+
+$black: #000;
+$gray-dark: #666;
+$gray-white: #CCC;
+$white: #FFF;
+
 /*@MIXINS*/
+@mixin box-sizing{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@mixin transition($type, $speed, $courbe:linear, $back:true){
+	-webkit-transition: $type $speed $courbe;
+	-moz-transition: $type $speed $courbe;
+	-ms-transition: $type $speed $courbe;
+	-o-transition: $type $speed $courbe;
+	transition: $type $speed $courbe;
+	
+	@if $back == true{
+		-webkit-backface-visibility:hidden;
+		-moz-backface-visibility:hidden;
+		backface-visibility:hidden;
+	}
+}
+
+@mixin transform($x:0, $y:0, $z:0){
+	transform: translate3d($x,$y,$z);
+	-webkit-transform: translate3d($x,$y,$z);
+	-moz-transform: translate3d($x,$y,$z);
+	-ms-transform: translate3d($x,$y,$z);
+	-o-transform: translate3d($x,$y,$z);
+}
+
+
+/*FONT FACE*/
