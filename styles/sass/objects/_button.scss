@@ -1,0 +1,100 @@
+.btn{
+    display:inline-block;       
+    vertical-align:middle;      
+    font-family:inherit;        
+    font-size:100%;             
+    cursor:pointer;             
+    border:none;                
+    margin:0;                   
+    padding-top:   0;           
+    padding-bottom:0;           
+    line-height:3;              
+    padding-right:1em;          
+    padding-left: 1em;          
+}
+
+/*------------------------------------*\
+//    $SIZES
+\*------------------------------------*/
+/**
+//Button size modifiers.
+ *
+//These all follow the same sizing rules as above; text is 1em, space around it
+//remains uniform.
+ */
+.btn--small{
+    padding-right:1em;
+    padding-left: 1em;
+    line-height:2.5;
+    font-size: 13px;
+}
+
+.btn--large{
+    padding-right:2em;
+    padding-left: 2em;
+    line-height:4;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn--huge{
+    padding-right:2em;
+    padding-left: 2em;
+    line-height:5;
+}
+
+/**
+//These buttons will fill the entirety of their container.
+ *
+//1. Remove padding so that widths and paddings don’t conflict.
+ */
+.btn--full{
+    width:100%;
+    padding-right:0;            
+    padding-left: 0;           
+    text-align:center;
+    i{ margin-left: -10px; }
+}
+
+.btn--fixed{
+    width: 460px;
+    text-align: center;
+    border-radius: 4px;
+    
+    i{ margin-left: -10px; }
+}
+
+/*BTN Colord*/
+.btn--blue{
+    color: $white;
+    background-color: $blue;
+    &:hover{
+        background-color: #4f9ad8;
+    }
+}
+
+.btn--green{
+    color: $white;
+    background-color: $green;
+    &:hover{
+        background-color: #2fb18e;
+    }
+}
+
+.btn--orange{
+    color: $white;
+    background-color: $orange;
+    &:hover{
+        background-color: #d7472a;
+    }
+}
+
+.btn--alpha{
+    color: $white;
+    border: solid 1px $white;
+    border-radius: 2px;
+    &:hover{
+        background-color: #404040;
+        background-color: rgba(255,255,255, 0.10);
+    }
+}

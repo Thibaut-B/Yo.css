@@ -1,0 +1,24 @@
+/*
+  SASS Controller
+  By Thibaut-baillet
+  http://thibaut-baillet.com
+*/
+
+@charset 'UTF-8';
+
+@import "default";
+
+@import "generic/mixin";
+@import "generic/reset";
+@import "generic/font";
+@import "generic/main";
+@import "generic/helper";
+
+@import "objects/animation";
+@import "objects/button";
+@import "objects/nav";
+
+@import "views/home";
+
+
+
