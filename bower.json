@@ -1,0 +1,10 @@
+{
+  "name": "oocss-boilerplate",
+  "version": "1.0.0",
+  "main": "styles/*",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ]
+}
