@@ -13,12 +13,22 @@
 @import "generic/font";
 @import "generic/main";
 @import "generic/helper";
+@import "generic/tools";
 
 @import "objects/animation";
+@import "objects/arrow";
 @import "objects/button";
+@import "objects/form";
+@import "objects/label";
+@import "objects/list";
 @import "objects/nav";
+@import "objects/popin";
+@import "objects/scroll";
+@import "objects/stats";
+@import "objects/table";
 
-@import "views/home";
+
+@import "views/demo";
 
 
 

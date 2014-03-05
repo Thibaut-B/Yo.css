@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css" />
+
+  <style>
+    body{
+        background-color: #F3F3F3;
+    }
+    .center{
+      width: 1280px;
+      max-width: 100%;
+      padding: 0 10px;
+      margin: 0 auto;
+    }
+  </style>
+  
+</head>
+<body>
+
+<section class="center">
+    <h1>Heading</h1>
+    <p>Paragraphe Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. <strong>Vestibulum id ligula porta felis</strong> euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+    
+    <h1>Titre h1, .alpha</h1>
+    <h2>Titre h2, .beta</h2>
+    <h3>Titre h3, .gamma</h3>
+    <h4>Titre h4, .delta</h4>
+    <h5>Titre h5, .epsilon</h5>
+    <h6>Titre h5, .zeta</h6>
+</section>  
+
+
+
+
+<section class="center">
+    <h1>Bouton</h1>
+    
+    <h3>Normal</h3>
+    <p><a href="#" class="btn btn--green">Inviter vos amis</a></p>
+    
+    <h3>Bouton small, large and huge</h3>
+    <p>
+        <a href="#" class="btn btn--green btn--small">Supprimer ce compte</a>
+        <a href="#" class="btn btn--green btn--large">Link Text</a>
+        <a href="#" class="btn btn--green btn--huge">Link Text</a>
+    </p>
+    
+    <h3>Full</h3>
+    <p>
+        <a href="#" class="btn btn--green btn--full">Link Text</a>
+    </p>
+    
+    <h3>Largeur fixe</h3>
+    <p>
+        <a href="#" class="btn btn--green btn--fixed">Link Text</a>
+    </p>
+    
+    <h3>Couleur</h3>
+    <p>
+        <a href="#" class="btn btn--red">Link Text</a>
+        <a href="#" class="btn btn--green">Link Text</a>
+        <a href="#" class="btn btn--blue">Link Text</a>
+        <a href="#" class="btn btn--white">Link Text</a>
+        <a href="#" class="btn btn--gray">Link Text</a>
+        <a href="#" class="btn btn--black">Link Text</a>
+        <a href="#" class="btn btn--blue--alt">Link Text</a>
+    </p>
+    <p style="background-color: #444; padding: 20px;">
+        <a href="#" class="btn btn--red">Link Text</a>
+        <a href="#" class="btn btn--green ">Link Text</a>
+        <a href="#" class="btn btn--yellow ">Link Text</a>
+        <a href="#" class="btn btn--white">Link Text</a>
+        <a href="#" class="btn btn--gray">Link Text</a>
+        <a href="#" class="btn btn--black">Link Text</a>
+        <a href="#" class="btn btn--blue--alt">Link Text</a>
+    </p>
+        
+</section>  
+
+
+<section class="center">
+    <h1>List</h1>
+    <ul class="block-list">
+        <li class="tooltip--show" data-tip="1500pts">
+            <div class="toggle float--right"  >
+              <label class="toggle-radio" for="toggleOption2"><i class="icon icon-ok"></i></label>
+              <input type="radio" name="toggleOptions" id="toggleOption1" value="option1" checked="checked">
+              <label class="toggle-radio" for="toggleOption1"><i class="icon icon-cancel"></i></label>
+              <input type="radio" name="toggleOptions" id="toggleOption2" value="option2">
+            </div>
+            <i class="icon icon-facebook"></i>Facebook
+            <span class="tooltip">1500pts</span>
+        </li>
+        <li><i class="icon icon-twitter "></i>Twitter</li>
+        <li><i class="icon icon-gplus "></i>Google Plus</li>
+        <li><i class="icon icon-paper-plane "></i>Newsletter</li>
+    </ul>
+
+</section>
+  
+  
+<section class="center">
+    <h1>Form</h1>
+    <form method="post" action="">
+        <ul class="block-list form-list">
+            <li>
+                <label for=""><i class="icon icon-paper-plane"></i>Email</label>
+                <input type="text" placeholder="ryan@warnerbros.fr" name="" value="" />
+            </li>
+            <li>
+                <label for=""><i class="icon icon-user"></i>Prénom</label>
+                <input type="text" class="validate" placeholder="Ryan" name="" value="" />
+            </li>
+        </ul>
+        
+        <p>
+            <input type="text" placeholder="placeholder" name="" value="" />
+        </p>
+        <p>
+            <input type="text" class="input--fixed" placeholder="placeholder" name="" value="" />
+        </p>
+        <p>
+            <input type="text" class="input--fixed validate" placeholder="placeholder" name="" value="" />
+            <input type="text" class="input--fixed error" placeholder="placeholder" name="" value="" />
+        </p>
+    </form>
+    
+</section>  
+
+<section class="center">
+    <h1>Radio boutton</h1>
+    
+    <div class="toggle">
+      <label class="toggle-radio" for="toggleOption2"><i class="icon icon-ok"></i></label>
+      <input type="radio" name="toggleOptions" id="toggleOption1" value="option1" checked="checked">
+      <label class="toggle-radio" for="toggleOption1"><i class="icon icon-cancel"></i></label>
+      <input type="radio" name="toggleOptions" id="toggleOption2" value="option2">
+    </div>
+    
+</section>
+
+
+<section class="center">
+    <h1>Image</h1>
+    
+    <figure class="img--user img--tall img--round">
+        <img src="assets/img/user.jpg"/>
+    </figure>
+    <figure class="img--user img--medium img--round">
+        <img src="assets/img/user.jpg" alt="" />
+    </figure>
+    <figure class="img--user img--short img--round">
+        <img src="assets/img/user.jpg" alt=""/>
+    </figure>
+    
+    <p>
+        <div class="progress"><div style="width: 20%;"></div></div>
+    </p>
+</section>  
+
+<section class="center">
+    <h1>User stat</h1>
+    
+    <section class="stat text--center">
+        <dl class="stat-cell">
+            <dd class="stat-value">50/50</dd>
+            <dt class="stat-title">Actions</dt>
+        </dl>
+
+        <dl class="stat-cell">
+            <dt class="stat-value">08</dt>
+            <dd class="stat-title">Badges</dd>
+        </dl>
+
+        <dl class="stat-cell">
+            <dt class="stat-value">02</dt>
+            <dd class="stat-title"><i class="icon icon-trophy"></i>Challenges</dd>
+        </dl>
+        
+        <dl class="stat-cell">
+            <dt class="stat-value">16859</dt>
+            <dd class="stat-title">Points</dd>
+        </dl>
+    </section>
+    
+</section>  
+
+  
+
+
+
+<div class="grid-horizontal"></div>
+<div class="grid-vertical"></div>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</body>
+</html>

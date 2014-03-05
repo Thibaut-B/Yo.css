@@ -11,6 +11,16 @@
 }
 
 
+/*
+ *
+ */
+@mixin button($bg, $lighten:5% ){
+    background-color: $bg;
+    &:hover{
+        background-color: lighten($bg, $lighten);
+    }
+}
+
 /**
 //Force overly long spans of text to truncate, e.g.:
  *
@@ -61,4 +71,16 @@
     @keyframes $animation-name{
         @content;
     }
+}
+
+/**
+ * Create a fully formed type style (sizing and vertical rhythm) by passing in a
+ * single value, e.g
+ */
+@mixin font-size($font-size, $line-height:true){
+    font-size:$font-size;
+    font-size:($font-size / $base-font-size)*1rem;
+    line-height: ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
+    
+    margin-bottom: $base-line-height;
 }

@@ -1,0 +1,17 @@
+@if $use-stats == true{
+
+.stat{
+    display: table;
+    width: 100%;
+    position: relative;
+}
+.stat-cell{
+    display: table-cell;
+}
+.stat-value, .stat-title{
+    margin: 0;
+}
+
+
+
+}

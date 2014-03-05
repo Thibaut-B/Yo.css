@@ -1,0 +1,27 @@
+@if $display-horizontal-grid or $display-vertical-grid {
+  html {
+    position: relative;
+  }
+
+  [class^="grid-"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+}
+
+@if $display-horizontal-grid {
+  .grid-horizontal {
+    background: url("img/horizontal_grid.png") repeat;
+  }
+}
+
+@if $display-vertical-grid {
+  .grid-vertical {
+    background: url("img/vertical_grid.png") center top repeat;
+  }
+}

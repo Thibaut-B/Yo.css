@@ -1,10 +1,11 @@
 html{
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font:#{($base-font-size/16px)*1em}/#{$line-height-ratio} $base-font-family;
     font-weight: 400;
     min-height:100%;
     font-smoothing: always; 
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 *{
@@ -14,16 +15,28 @@ html{
 /*Heading*/
 h1, h2, h3, h4, h5, h6{
     font-weight: 400;
-    margin: 0;
+    margin-top: 0;
 }
 
-h1, .h1{ font-size: 24px; }
-h2, .h2{ font-size: 20px; }
-h3, .h3{ font-size: 16px; }
-h4, .h4{ font-size: 14px; }
-h5, .h5{ font-size: 12px; }
-h6, .h6{ font-size: 10px; }
-.giga{ font-size: 65px; }
+p{
+    margin-top: 0;
+    @include font-size($base-font-size); 
+}
+
+h1, .heading--1{ @include font-size($h1-size); }
+h2, .heading--2{ @include font-size($h2-size); }
+h3, .heading--3{ @include font-size($h3-size); }
+h4, .heading--4{ @include font-size($h4-size); }
+h5, .heading--5{ @include font-size($h5-size); }
+h6, .heading--6{ @include font-size($h6-size); }
+.giga{ @include font-size($giga-size); }
+.mega{ @include font-size($mega-size); }
+.kilo{ @include font-size($kilo-size); }
+
+
+img{
+    max-width:100%;
+}
 
 
 :focus {outline:none;}
