@@ -10,18 +10,29 @@
     body{
         background-color: #F3F3F3;
     }
-    .center{
-      width: 1280px;
-      max-width: 100%;
-      padding: 0 10px;
-      margin: 0 auto;
-    }
   </style>
   
 </head>
 <body>
 
-<section class="center">
+
+<header class="navbar">
+    <nav class="container">
+        <ul class="nav nav--block"> 
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown-toggle">
+                <a href="#">Licence</a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Dropdown link</a></li>
+                  <li><a href="#">Dropdown link</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section class="container">
     <h1>Heading</h1>
     <p>Paragraphe Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. <strong>Vestibulum id ligula porta felis</strong> euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
     
@@ -33,10 +44,7 @@
     <h6>Titre h5, .zeta</h6>
 </section>  
 
-
-
-
-<section class="center">
+<section class="container">
     <h1>Bouton</h1>
     
     <h3>Normal</h3>
@@ -78,32 +86,21 @@
         <a href="#" class="btn btn--black">Link Text</a>
         <a href="#" class="btn btn--blue--alt">Link Text</a>
     </p>
-        
 </section>  
 
 
-<section class="center">
+<section class="container">
     <h1>List</h1>
     <ul class="block-list">
-        <li class="tooltip--show" data-tip="1500pts">
-            <div class="toggle float--right"  >
-              <label class="toggle-radio" for="toggleOption2"><i class="icon icon-ok"></i></label>
-              <input type="radio" name="toggleOptions" id="toggleOption1" value="option1" checked="checked">
-              <label class="toggle-radio" for="toggleOption1"><i class="icon icon-cancel"></i></label>
-              <input type="radio" name="toggleOptions" id="toggleOption2" value="option2">
-            </div>
-            <i class="icon icon-facebook"></i>Facebook
-            <span class="tooltip">1500pts</span>
-        </li>
+        <li><i class="icon icon-facebook"></i>Facebook</li>
         <li><i class="icon icon-twitter "></i>Twitter</li>
         <li><i class="icon icon-google_plus "></i>Google Plus</li>
         <li><i class="icon icon-paperplane_ico "></i>Newsletter</li>
     </ul>
-
 </section>
   
   
-<section class="center">
+<section class="container">
     <h1>Form</h1>
     <form method="post" action="">
         <ul class="block-list form-list">
@@ -129,9 +126,48 @@
         </p>
     </form>
     
+    <h1>Button form</h1>
+    <form>
+      <fieldset>
+        <p><input type="button" value="Input type button"></p>
+        <p><input type="reset" value="Input type reset"></p>
+        <p><input type="submit" value="Input type submit"></p>
+        <p><input type="submit" value="Input type submit disabled" disabled></p>
+        <p><button type="button">Button type button</button></p>
+        <p><button type="reset">Button type reset</button></p>
+        <p><button type="submit">Button type submit</button></p>
+        <p><button type="button" disabled>Button type button disabled</button></p>
+        <p><button>Button</button></p>
+      </fieldset>
+    </form>
+    
+    <h1>Form elements</h1>
+    <form>
+      <fieldset>
+        <div><label>Text input</label> <input type="text"></div>
+        <div><label>Text input with placeholder</label> <input type="text" placeholder="I'm placeholder text"></div>
+        <div><label>Readonly input</label> <input type="text" value="Read only text input" readonly></div>
+        <div><label>Disabled input</label> <input type="text" value="Disabled text input" disabled></div>
+        <div><label>Required input <span class="required">*</span></label> <input type="text" required></div>
+        <div><label>Email input</label> <input type="email"></div>
+        <div><label>Search input</label> <input type="search"></div>
+        <div><label>Speech recognition input</label> <input type="text" id="speech" name="speech" x-webkit-speech=""></div>
+        <div><label>Tel input</label> <input type="tel"></div>
+        <div><label>URL input</label> <input type="url" placeholder="http://"></div>
+        <div><label>Password input</label> <input type="password" value="password"></div>
+        <div><label>Select field</label> <select><option>Option 01</option><option>Option 02</option></select></div>
+        <div><label>Multiple select field</label><select multiple size="5"><option>Option 1</option><option>Option 2</option><option>Option 3</option><option>Option 4</option><option>Option 5</option><option>Option 6</option><option>Option 7</option><option>Option 8</option><option>Option 9</option><option>Option 10</option></select></div>
+        <div><label>Radio input</label> <input type="radio" name="rad"></div>
+        <div><label>Checkbox input</label> <input type="checkbox"></div>
+        <div><label><input type="radio" name="rad"> Radio input</label></div>
+        <div><label><input type="checkbox"> Checkbox input</label></div>
+        <div><label>File input</label> <input type="file"></div>
+        <div><label>Textarea</label> <textarea cols="30" rows="5" >Textarea text</textarea></div>
+      </fieldset>  
+    </form>
 </section>  
 
-<section class="center">
+<section class="container">
     <h1>Radio boutton</h1>
     
     <div class="toggle">
@@ -140,11 +176,23 @@
       <label class="toggle-radio" for="toggleOption1"><i class="icon icon-cancel"></i></label>
       <input type="radio" name="toggleOptions" id="toggleOption2" value="option2">
     </div>
+</section>
+
+<section class="container">
+    <h1>Checkbox</h1>
     
+    <p>
+        <input type="checkbox">
+        <label>Label</label>
+    </p>
+    <p>
+        <input type="checkbox" checked="checked">
+        <label>Label</label>
+    </p>
 </section>
 
 
-<section class="center">
+<section class="container">
     <h1>Image</h1>
     
     <figure class="img--user img--tall img--round">
@@ -162,10 +210,10 @@
     </p>
 </section>  
 
-<section class="center">
+<section class="container">
     <h1>User stat</h1>
     
-    <section class="stat text--center">
+    <section class="stat text--container">
         <dl class="stat-cell">
             <dd class="stat-value">50/50</dd>
             <dt class="stat-title">Actions</dt>
@@ -186,17 +234,13 @@
             <dd class="stat-title">Points</dd>
         </dl>
     </section>
-    
 </section>  
-
-  
-
 
 
 <div class="grid-horizontal"></div>
 <div class="grid-vertical"></div>
     
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 </body>
 </html>

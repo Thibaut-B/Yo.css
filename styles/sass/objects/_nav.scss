@@ -67,20 +67,11 @@
  *
  */
 .nav--block{
-    line-height:1;
-    /**
-    //Remove whitespace caused by `inline-block`.
-     */
-    letter-spacing:-0.31em;
-    word-spacing:-0.43em;
     white-space:nowrap;
 
     > li{
-        letter-spacing:normal;
-        word-spacing:normal;
-
         > a{
-            padding: 5px 10px;
+            padding: $half-spacing-unit;
         }
     }
 }
@@ -132,5 +123,40 @@
         }
     }
 }
+
+
+.navbar{
+    background-color: $base-ui-color;
+    margin-bottom: $base-line-height;
+    
+    a{
+        color: #FFF;
+        
+        &:hover, &.current{
+            background-color: lighten($base-ui-color, 5%);
+        }
+    }
+}
+
+
+
+.dropdown-toggle{
+    position: relative;
+    &:hover{
+        .dropdown-menu{ display:block; }
+    }
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    background-color: $base-ui-color;
+    display: none;
+    
+    a{ @extend .btn; }
+}
+
+
+
 
 }

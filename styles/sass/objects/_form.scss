@@ -1,11 +1,71 @@
 @if $use-form == true{
 
-fieldset{
-    /*padding:$base-spacing-unit;*/
+fieldset{ padding:$base-spacing-unit; }
+label{ display: block; }
+
+input{
+    -webkit-appearance: none;
+    @include font-size($base-font-size); 
 }
-input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus{
+
+input[type="text"],input[type="tel"],input[type="email"],input[type="password"],input[type="url"],input[type="search"]{
+    border: 1px solid $gray;
+    padding-left: 1em;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"]{
+    @extend .btn;
+}
+
+input:focus, textarea:focus{
     outline: none;
 }
+
+
+.form--inline{
+    label{
+        display: inline-block;
+        width: 300px;
+    }
+}
+
+.no--label{
+    label{ display: none; }
+}
+
+
+
+input[type="radio"] {
+    display: inline-block;
+
+    border-radius: 25px;
+    border: 1px solid #dbdfe3;
+
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    
+    position: relative;
+
+    -webkit-appearance: none;
+    
+    &:after {
+        border-radius: 50%;
+        content: '';
+        display: block;
+        height: 9px;
+        left: 2px;
+        position: relative;
+        top: 2px;
+        width: 9px;
+    }
+    
+    &:checked:after {
+        background-color: #228aff;
+    }
+}
+
+
 
 
 }
