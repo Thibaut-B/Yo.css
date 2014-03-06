@@ -1,7 +1,7 @@
-Saas-boilerplate
+Sass-boilerplate
 ================
 
-A Boilerplate pattern for start with Saas and ooCSS
+A Boilerplate pattern for start with Sass and ooCSS
 
 #Installation Sass
 <pre>
