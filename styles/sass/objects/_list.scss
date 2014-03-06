@@ -33,4 +33,25 @@ li{
 }
 
 
+
+.form--list{
+    ul{ @extend .block-list; }
+    li{ position: relative; }
+    input{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        border: none;
+        width: 70%;
+        @include vendor(transition, all .2s ease-in-out);
+        
+        &:focus{
+            width: 100%;
+            background-color: darken($white, 3%);
+        }
+    }
+}
+
+
 }

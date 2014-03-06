@@ -102,8 +102,8 @@
   
 <section class="container">
     <h1>Form</h1>
-    <form method="post" action="">
-        <ul class="block-list form-list">
+    <form method="post" action="" class="form--list">
+        <ul>
             <li>
                 <label for=""><i class="icon icon-paperplane_ico"></i>Email</label>
                 <input type="text" placeholder="ryan@warnerbros.fr" name="" value="" />
@@ -113,17 +113,6 @@
                 <input type="text" class="validate" placeholder="Ryan" name="" value="" />
             </li>
         </ul>
-        
-        <p>
-            <input type="text" placeholder="placeholder" name="" value="" />
-        </p>
-        <p>
-            <input type="text" class="input--fixed" placeholder="placeholder" name="" value="" />
-        </p>
-        <p>
-            <input type="text" class="input--fixed validate" placeholder="placeholder" name="" value="" />
-            <input type="text" class="input--fixed error" placeholder="placeholder" name="" value="" />
-        </p>
     </form>
     
     <h1>Button form</h1>
@@ -144,25 +133,28 @@
     <h1>Form elements</h1>
     <form>
       <fieldset>
-        <div><label>Text input</label> <input type="text"></div>
-        <div><label>Text input with placeholder</label> <input type="text" placeholder="I'm placeholder text"></div>
-        <div><label>Readonly input</label> <input type="text" value="Read only text input" readonly></div>
-        <div><label>Disabled input</label> <input type="text" value="Disabled text input" disabled></div>
-        <div><label>Required input <span class="required">*</span></label> <input type="text" required></div>
-        <div><label>Email input</label> <input type="email"></div>
-        <div><label>Search input</label> <input type="search"></div>
-        <div><label>Speech recognition input</label> <input type="text" id="speech" name="speech" x-webkit-speech=""></div>
-        <div><label>Tel input</label> <input type="tel"></div>
-        <div><label>URL input</label> <input type="url" placeholder="http://"></div>
-        <div><label>Password input</label> <input type="password" value="password"></div>
-        <div><label>Select field</label> <select><option>Option 01</option><option>Option 02</option></select></div>
-        <div><label>Multiple select field</label><select multiple size="5"><option>Option 1</option><option>Option 2</option><option>Option 3</option><option>Option 4</option><option>Option 5</option><option>Option 6</option><option>Option 7</option><option>Option 8</option><option>Option 9</option><option>Option 10</option></select></div>
-        <div><label>Radio input</label> <input type="radio" name="rad"></div>
-        <div><label>Checkbox input</label> <input type="checkbox"></div>
-        <div><label><input type="radio" name="rad"> Radio input</label></div>
-        <div><label><input type="checkbox"> Checkbox input</label></div>
-        <div><label>File input</label> <input type="file"></div>
-        <div><label>Textarea</label> <textarea cols="30" rows="5" >Textarea text</textarea></div>
+        <div class="form-group"><label>Text input</label> <input type="text"></div>
+        <div class="form-group"><label>Text input with placeholder</label> <input type="text" placeholder="I'm placeholder text"></div>
+        <div class="form-group"><label>Readonly input</label> <input type="text" value="Read only text input" readonly></div>
+        <div class="form-group"><label>Disabled input</label> <input type="text" value="Disabled text input" disabled></div>
+        <div class="form-group"><label>Required input <span class="required">*</span></label> <input type="text" required></div>
+        <div class="form-group"><label>Email input</label> <input type="email"></div>
+        <div class="form-group"><label>Search input</label> <input type="search"></div>
+        <div class="form-group"><label>Speech recognition input</label> <input type="text" id="speech" name="speech" x-webkit-speech=""></div>
+      </fieldset>  
+    </form>
+    
+    <form class="form--inline">
+      <fieldset>
+        <p><label>Tel input</label> <input type="tel"></p>
+        <p><label>URL input</label> <input type="url" placeholder="http://"></p>
+        <p><label>Password input</label> <input type="password" value="password"></p>
+        <p><label>Select field</label> <select><option>Option 01</option><option>Option 02</option></select></p>
+        <div class="form-group"><label><input type="checkbox"> Checkbox input</label></div>
+        <div class="form-group"><label>File input</label> <input type="file"></div>
+        <div class="form-group"><label>Textarea</label> <textarea cols="30" rows="5" >Textarea text</textarea></div>
+        <div class="form-group"><label><input type="checkbox"> Checkbox input</label></div>
+        <div class="form-group"><label><input type="radio" name="rad"> Radio input</label></div>
       </fieldset>  
     </form>
 </section>  
@@ -170,24 +162,18 @@
 <section class="container">
     <h1>Radio boutton</h1>
     
-    <div class="toggle">
-      <label class="toggle-radio" for="toggleOption2"><i class="icon icon-ok"></i></label>
-      <input type="radio" name="toggleOptions" id="toggleOption1" value="option1" checked="checked">
-      <label class="toggle-radio" for="toggleOption1"><i class="icon icon-cancel"></i></label>
-      <input type="radio" name="toggleOptions" id="toggleOption2" value="option2">
-    </div>
+    <p><label><input type="radio" name="rad"> Radio input</label></p>
+    <p><label><input type="radio" name="rad" checked="checked"> Radio input</label></p>
 </section>
 
 <section class="container">
     <h1>Checkbox</h1>
     
     <p>
-        <input type="checkbox">
-        <label>Label</label>
+        <label><input type="checkbox"> Label</label>
     </p>
     <p>
-        <input type="checkbox" checked="checked">
-        <label>Label</label>
+        <label><input type="checkbox" checked="checked"> Label</label>
     </p>
 </section>
 
