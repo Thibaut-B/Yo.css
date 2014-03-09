@@ -50,6 +50,10 @@
     border-bottom-right-radius:$brand-round;
 }
 
+.circled{
+    border-radius: 190px;
+}
+
 
 /**
 //Apply capital case to an element (usually a `strong`).
@@ -57,11 +61,6 @@
 .caps{
     text-transform:uppercase!important;
 }
-
-.circled{
-    border-radius: 190px;
-}
-
 
 /**
 //Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php

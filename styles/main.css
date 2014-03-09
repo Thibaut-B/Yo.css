@@ -1255,12 +1255,12 @@ img {
   border-bottom-right-radius: 4px;
 }
 
-.caps {
-  text-transform: uppercase !important;
-}
-
 .circled {
   border-radius: 190px;
+}
+
+.caps {
+  text-transform: uppercase !important;
 }
 
 .cf:after, .nav:after {
