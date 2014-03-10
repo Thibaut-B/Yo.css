@@ -1,0 +1,19 @@
+@if $use-breadcrumb == true{
+
+.breadcrumb {
+    padding:$half-spacing-unit;
+    margin: 0 0 $base-line-height;
+    background-color: $white;
+    border-radius: $brand-round;
+    
+    li {
+        display: inline-block;
+    }
+    
+    li+li:before {
+        content: "/\00a0";
+        padding: 0 5px;
+    }
+}
+
+}

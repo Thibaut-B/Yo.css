@@ -1,3 +1,22 @@
 @if $use-popin == true{
-
+    
+    .popin{
+        z-index: 999;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        padding:$half-spacing-unit;
+        background-color: $white;
+        visibility: hidden;
+        opacity: 0;
+        
+        @include vendor(transform, translate(-50%, -50%));
+        @include vendor(transition, opacity 0.2s ease-in-out);
+        
+        &.popin--show{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    
 }

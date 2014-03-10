@@ -1,0 +1,24 @@
+@if $use-pagination == true{
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    border-radius: 4px;
+    margin-bottom: $base-line-height;
+    
+    li {
+        display: inline
+    }
+    
+    a{
+        border: 2px solid $base-ui-color;
+        padding: 5px 10px;
+        
+        &:hover, &.current{
+            background-color: $base-ui-color;
+            color: $white;
+        }
+    }
+}
+
+}
