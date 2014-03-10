@@ -1,8 +1,18 @@
 @if $use-popin == true{
     
+    .popin, .popin-layer{
+        position: fixed;
+        visibility: hidden;
+        opacity: 0;
+        @include vendor(transition, opacity 0.2s ease-in-out);
+        
+        &.popin--show{
+            visibility: visible;
+        }
+    }
+    
     .popin{
         z-index: 999;
-        position: fixed;
         top: 50%;
         left: 50%;
         padding:$half-spacing-unit;
@@ -11,11 +21,22 @@
         opacity: 0;
         
         @include vendor(transform, translate(-50%, -50%));
-        @include vendor(transition, opacity 0.2s ease-in-out);
         
-        &.popin--show{
-            visibility: visible;
+        &.popin-show{
             opacity: 1;
+        }
+    }
+    
+    .popin-layer{
+        z-index: 990;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $black;
+        
+        &.popin-show{
+            opacity: .5;
         }
     }
     

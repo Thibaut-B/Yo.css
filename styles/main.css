@@ -1740,9 +1740,22 @@ li > ol {
   display: none;
 }
 
+.popin, .popin-layer {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.popin.popin--show, .popin-layer.popin--show {
+  visibility: visible;
+}
+
 .popin {
   z-index: 999;
-  position: fixed;
   top: 50%;
   left: 50%;
   padding: 12px;
@@ -1754,15 +1767,21 @@ li > ol {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -moz-transition: opacity 0.2s ease-in-out;
-  -ms-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
 }
-.popin.popin--show {
-  visibility: visible;
+.popin.popin-show {
   opacity: 1;
+}
+
+.popin-layer {
+  z-index: 990;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111111;
+}
+.popin-layer.popin-show {
+  opacity: .5;
 }
 
 /** 
