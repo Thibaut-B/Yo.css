@@ -107,15 +107,15 @@
  </header>
 */
 .navbar {
-    background-color: $base-ui-color;
+    background-color: map-get($themes-nav, background);
     margin-bottom: $base-line-height;
     
     a{
-        color: #FFF;
+        color: map-get($themes-nav, text);
         
         &:hover, 
         &.current {
-            background-color: lighten($base-ui-color, 5%);
+            background-color: lighten(map-get($themes-nav, background), 5%);
         }
     }
 }
@@ -141,7 +141,7 @@
 .dropdown-menu {
     position: absolute;
     top: 100%;
-    background-color: $base-ui-color;
+    background-color: map-get($themes-nav, background);
     display: none;
     
     a { @extend .btn; }

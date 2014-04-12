@@ -9,13 +9,15 @@
     li { display: inline; }
     
     a {
-        border: 2px solid $base-ui-color;
+        border: 2px solid map-get($themes-pagination, border);
         padding: 5px 10px;
+        color: map-get($themes-pagination, text);
+        background-color: map-get($themes-pagination, background);
         
         &:hover, 
         &.current {
-            background-color: $base-ui-color;
-            color: $white;
+            background-color: map-get($themes-pagination, background-hover);
+            color: map-get($themes-pagination, text-hover);
         }
     }
 }

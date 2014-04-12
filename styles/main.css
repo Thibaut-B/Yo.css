@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
   SASS Controller
   By Thibaut-baillet
@@ -22,13 +23,44 @@
     $FONT-SIZES
 */
 /*
+* Customize theme for different object
+*/
+/*
+* themes for form element
+*/
+/*
+//Create vendor-prefixed CSS in one go, e.g.
+//@include vendor(border-radius, 4px);`
+*/
+/*
+ *
+ */
+/**
+//Force overly long spans of text to truncate, e.g.:
+ *
+   `@include truncate(100%);`
+ *
+//Where `$truncation-boundary` is a united measurement.
+ */
+/**
+//Create CSS keyframe animations for all vendors in one go, e.g.:
+ *
+   .foo{
+       @include vendor(animation, shrink 3s);
+   }
+
+   @include keyframe(shrink){
+       from{
+           font-size:5em;
+       }
+   }
  *
  */
 /**
  * Create a fully formed type style (sizing and vertical rhythm) by passing in a
  * single value, e.g
  */
-/* normalize.css v2.1.1 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -441,7 +473,6 @@ ul {
   font-weight: normal;
   font-style: normal;
 }
-
 /*  MFG Labs iconset uses the Unicode Private Use Area (PUA) to ensure screen
     readers do not read off random characters that represent icons.
     We also use semantic unicode when they are available for the icon we provide. */
@@ -1106,7 +1137,6 @@ ul {
     transform: rotate(359deg);
   }
 }
-
 @-moz-keyframes rotateZ {
   0% {
     -webkit-transform: rotate(0);
@@ -1124,7 +1154,6 @@ ul {
     transform: rotate(359deg);
   }
 }
-
 @-ms-keyframes rotateZ {
   0% {
     -webkit-transform: rotate(0);
@@ -1142,7 +1171,6 @@ ul {
     transform: rotate(359deg);
   }
 }
-
 @-o-keyframes rotateZ {
   0% {
     -webkit-transform: rotate(0);
@@ -1160,7 +1188,6 @@ ul {
     transform: rotate(359deg);
   }
 }
-
 @keyframes rotateZ {
   0% {
     -webkit-transform: rotate(0);
@@ -1178,7 +1205,6 @@ ul {
     transform: rotate(359deg);
   }
 }
-
 html {
   font: 1em/1.5 sans-serif;
   font-weight: 400;
@@ -1300,8 +1326,23 @@ img {
     width: 1280px;
   }
 }
+/*------------------------------------*\
+//    $HELPER
+\*------------------------------------*/
+/**
+//A series of helper classes to use arbitrarily. Only use a helper class if an
+//element/component doesn’t already have a class to which you could apply this
+//styling, e.g. if you need to float `.main-nav` left then add `float:left;` to
+//that ruleset as opposed to adding the `.float--left` class to the markup.
+ *
+//A lot of these classes carry `!important` as you will always want them to win
+//out over other selectors.
+ */
+/**
+//Add/remove floats
+ */
 .float--right {
-  float: right!important;
+  float: right !important;
 }
 
 .float--left {
@@ -1312,30 +1353,39 @@ img {
   float: none !important;
 }
 
+/**
+//Text alignment
+ */
 .text--left {
   text-align: left  !important;
 }
 
 .text--center {
-  text-align: center!important;
+  text-align: center !important;
 }
 
 .text--right {
   text-align: right !important;
 }
 
+/**
+//Font weights
+ */
 .weight--light {
-  font-weight: 300!important;
+  font-weight: 300 !important;
 }
 
 .weight--normal {
-  font-weight: 400!important;
+  font-weight: 400 !important;
 }
 
 .weight--semibold {
-  font-weight: 600!important;
+  font-weight: 600 !important;
 }
 
+/**
+//Border radius
+**/
 .round {
   border-radius: 4px;
 }
@@ -1354,10 +1404,18 @@ img {
   border-radius: 190px;
 }
 
+/**
+//Apply capital case to an element (usually a `strong`).
+ */
 .caps {
-  text-transform: uppercase!important;
+  text-transform: uppercase !important;
 }
 
+/**
+//Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+//Extend the clearfix class with Sass to avoid the `.cf` class appearing over
+//and over in your markup.
+ */
 .cf:after, .nav:after {
   content: "";
   display: table;
@@ -1509,6 +1567,7 @@ input[type="search"],
 select,
 textarea {
   border: 1px solid #bdc3c7;
+  background: white;
   padding-left: 1em;
 }
 
@@ -1557,8 +1616,8 @@ input[type="checkbox"]:checked::after {
   top: -8%;
   height: 45%;
   width: 90%;
-  border-bottom: 2px solid #228aff;
-  border-left: 2px solid #228aff;
+  border-bottom: 2px solid #3498db;
+  border-left: 2px solid #3498db;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -1574,6 +1633,7 @@ select {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+  background: solid #bdc3c7;
   background: white url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAiCAYAAABBY8kOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1MkRFOTFFRjlENDExMUUzOTNGQkIzRjgzQjM4NzIwOSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1MkRFOTFGMDlENDExMUUzOTNGQkIzRjgzQjM4NzIwOSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjUyREU5MUVEOUQ0MTExRTM5M0ZCQjNGODNCMzg3MjA5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjUyREU5MUVFOUQ0MTExRTM5M0ZCQjNGODNCMzg3MjA5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Nln79QAAAXNJREFUeNq817FOwzAQBmBznRgYsiJ16cTARDdm+ghBTCxI7cjAAI9AJXiAVjCDyMpWdhYiFmbWjjxC+K+yEQWM/dtRTjo5ctt8snO5pKZpGsPk1c3dgP2Nphgirm/vhxheMM4MGUIiC2SBHLOYJCAuKEwSERqTBOQC+cFiQiKTs5OjKcYRiwmJzPUAY81iwiIuWExSkBRMUhEWkxyEwXpb/Z0sxMX+3u7y+fXtCYclctNODzG3jc8edUWXuUhgZSVWNlDoEFnnIh5Mc4S59w1t4RB1RQeYqExLYa+7g80K6iLEdBSuvAtk2eaJdevc9rnyLmx5n6IUlyjFuqXro+c81pLX0tcVPWi92+/M8KVxS0hhc+HK++fzJRnzdJhKy1s8NxmNeZA5zj/5KoZcLISslXcqFoP8uo9YLBb584aNxRjE2xlCGIsEe90/r1vnDBLVVAMvkFFIVFP1bCOFRHdvDxaN0M+jb9tYMcgquvoj9inAAOVOsgV/W0ekAAAAAElFTkSuQmCC") 95% 50% no-repeat;
   background-size: .8em;
   padding-right: 2em;
@@ -1778,7 +1838,7 @@ li > ol {
   margin-bottom: 24px;
 }
 .navbar a {
-  color: #FFF;
+  color: white;
 }
 .navbar a:hover, .navbar a.current {
   background-color: #354b60;
@@ -1862,7 +1922,6 @@ li > ol {
   height: 100%;
   overflow: hidden;
 }
-
 .nano .content {
   position: absolute;
   overflow: scroll;
@@ -1872,15 +1931,9 @@ li > ol {
   bottom: 0;
   left: 0;
 }
-
 .nano .content::-webkit-scrollbar {
   visibility: hidden;
 }
-
-.has-scrollbar .content::-webkit-scrollbar {
-  visibility: visible;
-}
-
 .nano > .pane {
   background: rgba(0, 0, 0, 0.25);
   position: absolute;
@@ -1891,23 +1944,22 @@ li > ol {
   visibility: hidden\9;
   /* Target only IE7 and IE8 with this hack */
   opacity: .01;
-  -webkit-transition: .2s;
-  -moz-transition: .2s;
-  -o-transition: .2s;
-  transition: .2s;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
   border-radius: 5px;
 }
-
 .nano > .pane > .slider {
   background: #444;
-  background: rgba(0, 0, 0, 0.5);
   position: relative;
   margin: 0 1px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
+}
+
+.has-scrollbar .content::-webkit-scrollbar {
+  visibility: visible;
 }
 
 .nano:hover > .pane, .pane.active, .pane.flashed {
@@ -2001,6 +2053,8 @@ td {
 .pagination a {
   border: 2px solid #2c3e50;
   padding: 5px 10px;
+  color: #2c3e50;
+  background-color: transparent;
 }
 .pagination a:hover, .pagination a.current {
   background-color: #2c3e50;

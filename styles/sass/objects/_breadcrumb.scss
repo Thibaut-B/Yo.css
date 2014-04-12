@@ -3,7 +3,7 @@
 .breadcrumb {
     padding:$half-spacing-unit;
     margin: 0 0 $base-line-height;
-    background-color: $white;
+    background-color: map-get($themes-breadcrumb, background);
     border-radius: $brand-round;
     
     li {

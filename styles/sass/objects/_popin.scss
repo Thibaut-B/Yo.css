@@ -17,7 +17,7 @@
         top: 50%;
         left: 50%;
         padding:$half-spacing-unit;
-        background-color: $white;
+        background-color: map-get($themes-popin, background);
         visibility: hidden;
         opacity: 0;
         

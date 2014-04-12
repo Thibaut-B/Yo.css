@@ -1,0 +1,61 @@
+/*
+* Customize theme for different object
+*/
+
+$themes-breadcrumb: (
+  background:             $white
+);
+
+$themes-nav: (
+  background:             $base-ui-color,
+  text:                   $white
+);
+
+$themes-list: (
+  background:             $white,
+  text:                   $gray,
+  shadow:                 rgba(0,0,0,0.1),
+  border:                 darken($white, 5%)
+);
+
+$themes-pagination: (
+  text:                   $base-ui-color,
+  background:             transparent,
+  border:                 $base-ui-color,
+  text-hover:             $white,
+  background-hover:       $base-ui-color
+);
+
+$themes-popin: (
+  background:             $white
+);
+
+$themes-scroll: (
+  background-pane:        rgba(0,0,0,.25),
+  backgorund-slider:      rgba(0,0,0,.5)
+);
+
+$themes-table: (
+  border:                 $base-ui-color
+);
+
+
+
+/*
+* themes for form element
+*/
+$themes-input: (
+  border:                 $gray,
+  background:             $white
+);
+
+$themes-checkbox: (
+  border:                 $gray,
+  check:                  $blue
+);
+
+$themes-radio: (
+  border:                 $gray,
+  check:                  $blue
+);
+

@@ -20,7 +20,8 @@ input[type="url"],
 input[type="search"],
 select, 
 textarea {
-    border: 1px solid $gray;
+    border: 1px solid map-get($themes-input, border);
+    background: map-get($themes-input, background);
     padding-left: 1em;
 }
 
@@ -41,7 +42,7 @@ input[type="radio"] {
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    border: 1px solid $gray;
+    border: 1px solid map-get($themes-radio, border);
     cursor: pointer;
 
     &:after {
@@ -56,7 +57,7 @@ input[type="radio"] {
     }
     
     &:checked:after {
-        background-color: $blue;
+        background-color: map-get($themes-radio, check);
     }
 }
 
@@ -66,7 +67,7 @@ input[type="checkbox"] {
     position: relative;
     width: 15px;
     height: 15px;
-    border: 1px solid $gray;
+    border: 1px solid map-get($themes-checkbox, border);
     border-radius: 2px;
     vertical-align: middle;
     cursor: pointer;
@@ -78,8 +79,8 @@ input[type="checkbox"] {
         top: -8%;
         height: 45%;
         width: 90%;
-        border-bottom: 2px solid #228aff;
-        border-left: 2px solid #228aff;
+        border-bottom: 2px solid map-get($themes-checkbox, check);
+        border-left: 2px solid map-get($themes-checkbox, check);
         @include vendor(transform, rotate(-45deg));
     }
 }
@@ -90,7 +91,8 @@ select {
 
     // customize the background and dropdown icon
     @include vendor(user-select, none);
-    background: $white url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAiCAYAAABBY8kOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1MkRFOTFFRjlENDExMUUzOTNGQkIzRjgzQjM4NzIwOSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1MkRFOTFGMDlENDExMUUzOTNGQkIzRjgzQjM4NzIwOSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjUyREU5MUVEOUQ0MTExRTM5M0ZCQjNGODNCMzg3MjA5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjUyREU5MUVFOUQ0MTExRTM5M0ZCQjNGODNCMzg3MjA5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Nln79QAAAXNJREFUeNq817FOwzAQBmBznRgYsiJ16cTARDdm+ghBTCxI7cjAAI9AJXiAVjCDyMpWdhYiFmbWjjxC+K+yEQWM/dtRTjo5ctt8snO5pKZpGsPk1c3dgP2Nphgirm/vhxheMM4MGUIiC2SBHLOYJCAuKEwSERqTBOQC+cFiQiKTs5OjKcYRiwmJzPUAY81iwiIuWExSkBRMUhEWkxyEwXpb/Z0sxMX+3u7y+fXtCYclctNODzG3jc8edUWXuUhgZSVWNlDoEFnnIh5Mc4S59w1t4RB1RQeYqExLYa+7g80K6iLEdBSuvAtk2eaJdevc9rnyLmx5n6IUlyjFuqXro+c81pLX0tcVPWi92+/M8KVxS0hhc+HK++fzJRnzdJhKy1s8NxmNeZA5zj/5KoZcLISslXcqFoP8uo9YLBb584aNxRjE2xlCGIsEe90/r1vnDBLVVAMvkFFIVFP1bCOFRHdvDxaN0M+jb9tYMcgquvoj9inAAOVOsgV/W0ekAAAAAElFTkSuQmCC') 95% 50% no-repeat;
+    background: solid map-get($themes-input, border);
+    background: map-get($themes-input, background) url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAiCAYAAABBY8kOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1MkRFOTFFRjlENDExMUUzOTNGQkIzRjgzQjM4NzIwOSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1MkRFOTFGMDlENDExMUUzOTNGQkIzRjgzQjM4NzIwOSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjUyREU5MUVEOUQ0MTExRTM5M0ZCQjNGODNCMzg3MjA5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjUyREU5MUVFOUQ0MTExRTM5M0ZCQjNGODNCMzg3MjA5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Nln79QAAAXNJREFUeNq817FOwzAQBmBznRgYsiJ16cTARDdm+ghBTCxI7cjAAI9AJXiAVjCDyMpWdhYiFmbWjjxC+K+yEQWM/dtRTjo5ctt8snO5pKZpGsPk1c3dgP2Nphgirm/vhxheMM4MGUIiC2SBHLOYJCAuKEwSERqTBOQC+cFiQiKTs5OjKcYRiwmJzPUAY81iwiIuWExSkBRMUhEWkxyEwXpb/Z0sxMX+3u7y+fXtCYclctNODzG3jc8edUWXuUhgZSVWNlDoEFnnIh5Mc4S59w1t4RB1RQeYqExLYa+7g80K6iLEdBSuvAtk2eaJdevc9rnyLmx5n6IUlyjFuqXro+c81pLX0tcVPWi92+/M8KVxS0hhc+HK++fzJRnzdJhKy1s8NxmNeZA5zj/5KoZcLISslXcqFoP8uo9YLBb584aNxRjE2xlCGIsEe90/r1vnDBLVVAMvkFFIVFP1bCOFRHdvDxaN0M+jb9tYMcgquvoj9inAAOVOsgV/W0ekAAAAAElFTkSuQmCC') 95% 50% no-repeat;
     background-size: .8em;
     padding-right: 2em;
 
