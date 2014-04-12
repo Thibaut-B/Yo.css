@@ -1665,27 +1665,27 @@ select::-ms-expand {
   font-weight: bold;
 }
 
-.label-gray {
+.label--gray {
   background-color: #bdc3c7;
 }
 
-.label-blue {
+.label--blue {
   background-color: #3498db;
 }
 
-.label-green {
+.label--green {
   background-color: #2ecc71;
 }
 
-.label-yellow {
+.label--yellow {
   background-color: #f1c40f;
 }
 
-.label-red {
+.label--red {
   background-color: #e74c3c;
 }
 
-.label-black {
+.label--black {
   background-color: #111111;
 }
 

@@ -1,7 +1,7 @@
-Sass-boilerplate
+Yo.css
 ================
 
-A Boilerplate pattern for start with Sass and OOCSS
+A simple OOCSS Framework thinks for front-end developer!
 
 #Installation Sass (3.3 minimum required)
 <pre>
@@ -13,3 +13,14 @@ A Boilerplate pattern for start with Sass and OOCSS
   sh watch
 </pre>
 
+
+## Credits
+Yo.css is inspired by the work of great people and include their best practice
+
+* **[Nicole Sullivan](https://twitter.com/stubbornella)** for her work on OOCSS
+* **[Mark Otto](https://twitter.com/mdo)** for her code guide and Twitter Bootstrap
+* **[Harry Roberts](https://twitter.com/csswizardry)** for her excellent framework inuit.css
+
+##Licenses
+All the project are distributed under
+[CC BY-SA](http://creativecommons.org/licenses/by/3.0/deed.en) licence.
