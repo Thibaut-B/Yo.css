@@ -6,15 +6,14 @@
     border-radius: 4px;
     margin-bottom: $base-line-height;
     
-    li {
-        display: inline
-    }
+    li { display: inline; }
     
-    a{
+    a {
         border: 2px solid $base-ui-color;
         padding: 5px 10px;
         
-        &:hover, &.current{
+        &:hover, 
+        &.current {
             background-color: $base-ui-color;
             color: $white;
         }

@@ -1,6 +1,7 @@
 @if $use-popin == true{
     
-    .popin, .popin-layer{
+    .popin, 
+    .popin-layer {
         position: fixed;
         visibility: hidden;
         opacity: 0;
@@ -11,7 +12,7 @@
         }
     }
     
-    .popin{
+    .popin {
         z-index: 999;
         top: 50%;
         left: 50%;
@@ -22,12 +23,10 @@
         
         @include vendor(transform, translate(-50%, -50%));
         
-        &.popin-show{
-            opacity: 1;
-        }
+        &.popin--show { opacity: 1; }
     }
     
-    .popin-layer{
+    .popin-layer {
         z-index: 990;
         top: 0;
         left: 0;
@@ -35,9 +34,7 @@
         height: 100%;
         background-color: $black;
         
-        &.popin-show{
-            opacity: .5;
-        }
+        &.popin--show{ opacity: .5;}
     }
     
 }

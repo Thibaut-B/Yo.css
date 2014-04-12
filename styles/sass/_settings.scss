@@ -16,7 +16,6 @@ $yellow: #f1c40f;
 
 $base-ui-color:     $blue-alt!default;
 
-
 $brand-round:        4px!default;
 
 
@@ -45,19 +44,16 @@ $use-icon-mfg:        true!default;
 $use-breadcrumb:      true!default;
 $use-pagination:      true!default;
 
-/*------------------------------------*\
+/*
     $BASE
-\*------------------------------------*/
+*/
 $base-font-size:    16px!default;
 $base-line-height:  24px!default;
 
 
-/*------------------------------------*\
+/*
     $FONT-SIZES
-\*------------------------------------*/
-/**
- * Font-sizes (in pixels). Refer to relevant sections for their implementations.
- */
+*/
 $giga-size:         96px!default;
 $mega-size:         72px!default;
 $kilo-size:         48px!default;
@@ -73,15 +69,8 @@ $milli-size:        12px!default;
 $micro-size:        10px!default;
 
 
-/**
- * Base font-family.
- */
+
 $base-font-family:  sans-serif!default;
-
-/**
- * Default color for objects’ borders etc.
- */
-
 
 $base-spacing-unit: $base-line-height!default;
 $half-spacing-unit: $base-spacing-unit / 2!default;

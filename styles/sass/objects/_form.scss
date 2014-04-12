@@ -1,47 +1,58 @@
 @if $use-form == true{
 
 
-form{ margin-bottom: $base-line-height; }
-fieldset{ padding:$base-spacing-unit; }
-label{ display: block; }
+form { margin-bottom: $base-line-height; }
+fieldset { padding:$base-spacing-unit; }
+label { display: block; }
 
-input, select, textarea{
+input, 
+select, 
+textarea {
     -webkit-appearance: none;
     @include font-size($base-font-size); 
 }
 
-input[type="text"],input[type="tel"],input[type="email"],input[type="password"],input[type="url"],input[type="search"], select, textarea{
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="search"],
+select, 
+textarea {
     border: 1px solid $gray;
     padding-left: 1em;
 }
 
-input[type="button"], input[type="submit"], input[type="reset"]{
+input[type="button"], 
+input[type="submit"], 
+input[type="reset"] {
     @extend .btn;
 }
 
-input:focus, textarea:focus, select{
+input:focus, 
+textarea:focus, 
+select {
     outline: none;
 }
 
-
-
 input[type="radio"] {
     display: inline-block;
+    height: 16px;
+    width: 16px;
     border-radius: 50%;
     border: 1px solid $gray;
     cursor: pointer;
-    height: 16px;
-    width: 16px;
-        
+
     &:after {
         content: '';
-        display: block;
-        border-radius: 50%;
         position: relative;
         left: 2px;
         top: 2px;
+        display: block;
         height: 10px;
         width: 10px;
+        border-radius: 50%;
     }
     
     &:checked:after {
@@ -73,7 +84,7 @@ input[type="checkbox"] {
     }
 }
 
-select{
+select {
     border-radius: 0;
     cursor: pointer;
 
@@ -93,25 +104,18 @@ select{
     }
 }
 
+.form-group { margin-bottom: $base-line-height; }
 
-.form-group{
-    margin-bottom: $base-line-height;
+.no--label { 
+  label { display: none; }
 }
 
-
-.no--label{
-    label{ display: none; }
-}
-
-
-.form--inline{
-    label{
+.form--inline {
+    label {
         display: inline-block;
         width: 300px;
     }
 }
-
-
 
 
 

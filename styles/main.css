@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
   SASS Controller
   By Thibaut-baillet
@@ -16,21 +15,12 @@
 /*
  * Class loaded
  */
-/*------------------------------------*\
+/*
     $BASE
-\*------------------------------------*/
-/*------------------------------------*\
+*/
+/*
     $FONT-SIZES
-\*------------------------------------*/
-/**
- * Font-sizes (in pixels). Refer to relevant sections for their implementations.
- */
-/**
- * Base font-family.
- */
-/**
- * Default color for objects’ borders etc.
- */
+*/
 /*
  *
  */
@@ -1311,7 +1301,7 @@ img {
   }
 }
 .float--right {
-  float: right !important;
+  float: right!important;
 }
 
 .float--left {
@@ -1327,7 +1317,7 @@ img {
 }
 
 .text--center {
-  text-align: center !important;
+  text-align: center!important;
 }
 
 .text--right {
@@ -1335,15 +1325,15 @@ img {
 }
 
 .weight--light {
-  font-weight: 300 !important;
+  font-weight: 300!important;
 }
 
 .weight--normal {
-  font-weight: 400 !important;
+  font-weight: 400!important;
 }
 
 .weight--semibold {
-  font-weight: 600 !important;
+  font-weight: 600!important;
 }
 
 .round {
@@ -1365,7 +1355,7 @@ img {
 }
 
 .caps {
-  text-transform: uppercase !important;
+  text-transform: uppercase!important;
 }
 
 .cf:after, .nav:after {
@@ -1374,7 +1364,10 @@ img {
   clear: both;
 }
 
-.btn, input[type="button"], input[type="submit"], input[type="reset"], .dropdown-menu a, button {
+.btn, input[type="button"],
+input[type="submit"],
+input[type="reset"], .dropdown-menu a,
+button {
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
@@ -1421,8 +1414,12 @@ img {
   margin-left: -1em;
 }
 
-/*BTN Color*/
-.btn--blue, .btn--green, .btn--red, .btn--yellow, .btn--black, .btn--blue--alt {
+.btn--blue,
+.btn--green,
+.btn--red,
+.btn--yellow,
+.btn--black,
+.btn--blue--alt {
   color: white;
 }
 
@@ -1494,39 +1491,50 @@ label {
   display: block;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   -webkit-appearance: none;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-input[type="text"], input[type="tel"], input[type="email"], input[type="password"], input[type="url"], input[type="search"], select, textarea {
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="search"],
+select,
+textarea {
   border: 1px solid #bdc3c7;
   padding-left: 1em;
 }
 
-input:focus, textarea:focus, select {
+input:focus,
+textarea:focus,
+select {
   outline: none;
 }
 
 input[type="radio"] {
   display: inline-block;
+  height: 16px;
+  width: 16px;
   border-radius: 50%;
   border: 1px solid #bdc3c7;
   cursor: pointer;
-  height: 16px;
-  width: 16px;
 }
 input[type="radio"]:after {
   content: '';
-  display: block;
-  border-radius: 50%;
   position: relative;
   left: 2px;
   top: 2px;
+  display: block;
   height: 10px;
   width: 10px;
+  border-radius: 50%;
 }
 input[type="radio"]:checked:after {
   background-color: #3498db;
@@ -1672,6 +1680,14 @@ li > ol {
   background-color: #f7f7f7;
 }
 
+/*
+   <ul class=nav>
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+*/
 .nav {
   list-style: none;
   margin-left: 0;
@@ -1683,6 +1699,14 @@ li > ol {
   zoom: 1;
 }
 
+/*
+   <ul class="nav  nav--stacked">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+*/
 .nav--stacked > li {
   display: list-item;
 }
@@ -1690,6 +1714,14 @@ li > ol {
   display: block;
 }
 
+/*
+   <ul class="nav nav--block">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+*/
 .nav--block {
   white-space: nowrap;
 }
@@ -1697,6 +1729,14 @@ li > ol {
   padding: 12px;
 }
 
+/*
+   <ul class="nav nav--fit">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+*/
 .nav--fit {
   display: table;
   width: 100%;
@@ -1708,6 +1748,14 @@ li > ol {
   display: block;
 }
 
+/*
+   <ul class="nav nav--keywords">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+*/
 .nav--keywords > li:after {
   content: "\002C" "\00A0";
 }
@@ -1715,6 +1763,16 @@ li > ol {
   display: none;
 }
 
+/*
+  <header class="navbar">
+   <ul class="nav nav--block">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ </header>
+*/
 .navbar {
   background-color: #2c3e50;
   margin-bottom: 24px;
@@ -1726,6 +1784,15 @@ li > ol {
   background-color: #354b60;
 }
 
+/*
+  <li class="dropdown-toggle">
+      <a href="#">Licence</a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">link</a></li>
+        <li><a href="#">link</a></li>
+      </ul>
+  </li>
+*/
 .dropdown-toggle {
   position: relative;
 }
@@ -1740,7 +1807,8 @@ li > ol {
   display: none;
 }
 
-.popin, .popin-layer {
+.popin,
+.popin-layer {
   position: fixed;
   visibility: hidden;
   opacity: 0;
@@ -1750,7 +1818,8 @@ li > ol {
   -o-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
 }
-.popin.popin--show, .popin-layer.popin--show {
+.popin.popin--show,
+.popin-layer.popin--show {
   visibility: visible;
 }
 
@@ -1768,7 +1837,7 @@ li > ol {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.popin.popin-show {
+.popin.popin--show {
   opacity: 1;
 }
 
@@ -1780,7 +1849,7 @@ li > ol {
   height: 100%;
   background-color: #111111;
 }
-.popin-layer.popin-show {
+.popin-layer.popin--show {
   opacity: .5;
 }
 
@@ -1857,7 +1926,8 @@ li > ol {
   display: table-cell;
 }
 
-.stat-value, .stat-title {
+.stat-value,
+.stat-title {
   margin: 0;
 }
 
@@ -1917,7 +1987,6 @@ td {
 
 .table--striped tbody tr:nth-of-type(odd) {
   background-color: #ffc;
-  /* Override this color in your theme stylesheet */
 }
 
 .pagination {
@@ -1951,3 +2020,5 @@ td {
   content: "/\00a0";
   padding: 0 5px;
 }
+
+/*Include your view here*/

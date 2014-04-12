@@ -1,138 +1,120 @@
 @if $use-nav == true{
 
-/*------------------------------------*\
-//    $NAV
-\*------------------------------------*/
-/**
-//Nav abstraction as per: csswizardry.com/2011/09/the-nav-abstraction
-//When used on an `ol` or `ul`, this class throws the list into horizontal mode
-//e.g.:
- *
+/*
    <ul class=nav>
        <li><a href=#>Home</a></li>
        <li><a href=#>About</a></li>
        <li><a href=#>Portfolio</a></li>
        <li><a href=#>Contact</a></li>
    </ul>
- */
-.nav{
-    list-style:none;
-    margin-left:0;
+*/
+.nav {
+    list-style: none;
+    margin-left: 0;
     @extend .cf;
 
-    > li{
-
+    > li {
         &,
-        > a{
-            display:inline-block;
-           *display:inline;
-            zoom:1;
+        > a {
+            display: inline-block;
+           *display: inline;
+            zoom: 1;
         }
     }
 }
 
 
-/**
-//`.nav--stacked` extends `.nav` and throws the list into vertical mode, e.g.:
- *
+/*
    <ul class="nav  nav--stacked">
        <li><a href=#>Home</a></li>
        <li><a href=#>About</a></li>
        <li><a href=#>Portfolio</a></li>
        <li><a href=#>Contact</a></li>
    </ul>
- *
- */
-.nav--stacked{
-
-    > li{
+*/
+.nav--stacked {
+    > li {
         display:list-item;
 
-        > a{
-            display:block;
-        }
+        > a { display:block; }
     }
 }
 
 
-/**
-//Give nav links a big, blocky hit area. Extends `.nav`, e.g.:
- *
-   <ul class="nav  nav--block">
+/*
+   <ul class="nav nav--block">
        <li><a href=#>Home</a></li>
        <li><a href=#>About</a></li>
        <li><a href=#>Portfolio</a></li>
        <li><a href=#>Contact</a></li>
    </ul>
- *
- */
-.nav--block{
+*/
+.nav--block {
     white-space:nowrap;
 
-    > li{
-        > a{
-            padding: $half-spacing-unit;
-        }
+    > li {
+        > a { padding: $half-spacing-unit; }
     }
 }
 
 
-/**
-//Force a nav to occupy 100% of the available width of its parent. Extends
-//`.nav`, e.g.:
- *
-   <ul class="nav  nav--fit">
+/*
+   <ul class="nav nav--fit">
        <li><a href=#>Home</a></li>
        <li><a href=#>About</a></li>
        <li><a href=#>Portfolio</a></li>
        <li><a href=#>Contact</a></li>
    </ul>
- *
-//Thanks to @pimpl for this idea!
- */
-.nav--fit{
-    display:table;
-    width:100%;
+*/
+.nav--fit {
+    display: table;
+    width: 100%;
 
-    > li{
-        display:table-cell;
+    > li {
+        display: table-cell;
 
-        > a{
-            display:block;
+        > a {
+            display: block;
         }
     }
 }
 
 
-
-//Make a list of keywords. Extends `.nav`, e.g.:
-// *
-//   `<ul class="nav  nav--keywords>`
-//*
-
-.nav--keywords{
-
-    > li{
-
-        &:after{
-            content:"\002C" "\00A0";
-        }
-
-        &:last-child:after{
-            display:none;
-        }
+/*
+   <ul class="nav nav--keywords">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+*/
+.nav--keywords {
+    > li {
+        &:after { content:"\002C" "\00A0"; }
+        &:last-child:after { display:none; }
     }
 }
 
 
-.navbar{
+/*
+  <header class="navbar">
+   <ul class="nav nav--block">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ </header>
+*/
+.navbar {
     background-color: $base-ui-color;
     margin-bottom: $base-line-height;
     
     a{
         color: #FFF;
         
-        &:hover, &.current{
+        &:hover, 
+        &.current {
             background-color: lighten($base-ui-color, 5%);
         }
     }
@@ -140,23 +122,30 @@
 
 
 
-.dropdown-toggle{
+/*
+  <li class="dropdown-toggle">
+      <a href="#">Licence</a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">link</a></li>
+        <li><a href="#">link</a></li>
+      </ul>
+  </li>
+*/
+.dropdown-toggle {
     position: relative;
-    &:hover{
+    &:hover {
         .dropdown-menu{ display:block; }
     }
 }
 
-.dropdown-menu{
+.dropdown-menu {
     position: absolute;
     top: 100%;
     background-color: $base-ui-color;
     display: none;
     
-    a{ @extend .btn; }
+    a { @extend .btn; }
 }
-
-
 
 
 }

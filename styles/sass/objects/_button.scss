@@ -1,6 +1,7 @@
 @if $use-button == true{
 
-.btn, button{
+.btn, 
+button {
     display:inline-block;       
     vertical-align:middle;      
     cursor:pointer;             
@@ -10,37 +11,33 @@
     line-height: 2.4;          
 }
 
-/*------------------------------------*\
-//    $SIZES
-\*------------------------------------*/
-.btn--small{
+.btn--small {
     padding-right:1em;
     padding-left: 1em;
     font-size: 12px;
 }
 
-.btn--large{
+.btn--large {
     padding-right:2em;
     padding-left: 2em;
     font-weight: bold;
     font-size: 24px;
 }
 
-.btn--huge{
+.btn--huge {
     padding-right:2em;
     padding-left: 2em;
     line-height:4.8;
 }
 
-
-.btn--full{
+.btn--full {
     width:100%;
     padding:0;            
     text-align:center;
     i{ margin-left: -1em; }
 }
 
-.btn--fixed{
+.btn--fixed {
     width: 360px;
     text-align: center;
     border-radius: $brand-round;
@@ -48,19 +45,24 @@
     i{ margin-left: -1em; }
 }
 
-/*BTN Color*/
-.btn--blue, .btn--green, .btn--red, .btn--yellow, .btn--black, .btn--blue--alt{
+
+.btn--blue, 
+.btn--green, 
+.btn--red, 
+.btn--yellow, 
+.btn--black, 
+.btn--blue--alt {
     color: $white;
 }
 
-.btn--white{  @include button($white);}
-.btn--black{  @include button($black);}
-.btn--gray{   @include button($gray);}
-.btn--blue{   @include button($blue); }
-.btn--green{  @include button($green);}
-.btn--red{    @include button($red);}
-.btn--yellow{ @include button($yellow);}
-.btn--blue--alt{ @include button($blue-alt); }
+.btn--white {  @include button($white); }
+.btn--black {  @include button($black); }
+.btn--gray {   @include button($gray); }
+.btn--blue {   @include button($blue); }
+.btn--green {  @include button($green); }
+.btn--red {    @include button($red); }
+.btn--yellow { @include button($yellow); }
+.btn--blue--alt { @include button($blue-alt); }
 
 
 

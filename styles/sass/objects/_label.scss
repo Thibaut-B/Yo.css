@@ -1,6 +1,6 @@
 @if $use-label == true{
 
-.label{
+.label {
     padding: $half-spacing-unit/2;
     border-radius: $brand-round;
     white-space: nowrap;
@@ -8,29 +8,17 @@
     font-weight: bold;
 }
 
-.label-gray{
-    background-color: $gray;
-}
+.label-gray { background-color: $gray; }
 
-.label-blue{
-    background-color: $blue;
-}
+.label-blue { background-color: $blue; }
 
-.label-green{
-    background-color: $green;
-}
+.label-green { background-color: $green; }
 
-.label-yellow{
-    background-color: $yellow;
-}
+.label-yellow { background-color: $yellow; }
 
-.label-red{
-    background-color: $red;
-}
+.label-red { background-color: $red; }
 
-.label-black{
-    background-color: $black;
-}
+.label-black { background-color: $black; }
 
 
 

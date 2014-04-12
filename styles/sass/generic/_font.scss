@@ -1,8 +1,8 @@
 /*Include @font-face here ! */
 
-@if $use-icon == true{
+@if $use-icon == true {
 
-.icon{
+.icon {
   font-family: "icon";
   font-style: normal;
   font-weight: normal;
@@ -21,7 +21,7 @@
 }
 
 
-@if $use-icon-mfg == true{
+@if $use-icon-mfg == true {
 
 @font-face {
   font-family: 'icon';
@@ -217,7 +217,7 @@
   &.fast{ @include vendor(animation-duration, 1.5s); }
 }
 
-@include keyframe(rotateZ){
+@include keyframe(rotateZ) {
     0%{
         @include vendor(transform, rotate(0));
     }

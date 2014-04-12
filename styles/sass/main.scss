@@ -7,7 +7,7 @@
 @charset 'UTF-8';
 
 
-@import "default";
+@import "settings";
 
 @import "generic/mixin";
 @import "generic/reset";
@@ -17,8 +17,6 @@
 @import "generic/helper";
 @import "generic/tools";
 
-@import "objects/animation";
-@import "objects/arrow";
 @import "objects/button";
 @import "objects/form";
 @import "objects/label";
@@ -31,6 +29,7 @@
 @import "objects/pagination";
 @import "objects/breadcrumb";
 
+/*Include your view here*/
 @import "views/demo";
 
 
