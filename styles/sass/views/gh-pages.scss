@@ -1,0 +1,39 @@
+/*
+Css used by Github page
+*/
+body {
+  padding-top: 48px;
+}
+
+.intro {
+  padding-top: 48px;
+  min-height: 450px;
+  background-color: $red;
+  color: $white;
+  
+  h2 {
+    font-weight: 400;
+  }
+  
+  .btn--red {
+    border: 2px solid #FFF;
+  }
+}
+
+article {
+  width: 33%;
+  float: left;
+  padding: 15px;
+}
+
+.feedback {
+  background-color: #f6f6f6;
+  border: 1px solid #d7d7d7;
+  padding: $half-spacing-unit;
+  max-width: 450px;
+  margin: 0 auto $base-line-height;
+}
+
+.mb {
+  margin-bottom: $base-line-height*3;
+}

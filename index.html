@@ -2,262 +2,101 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Yo.css</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
   <link rel="stylesheet" href="styles/main.css" />
-
-  <style>
-    body{
-        background-color: #F3F3F3;
-    }
-  </style>
   
 </head>
 <body>
 
-
-<header class="navbar">
-    <nav class="container">
-        <ul class="nav nav--block"> 
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li class="dropdown-toggle">
-                <a href="#">Licence</a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Dropdown link</a></li>
-                  <li><a href="#">Dropdown link</a></li>
-                </ul>
-            </li>
+<header class="navbar navbar--fixed">
+  <nav class="container">
+    <ul class="nav nav--block float--right"> 
+        <li><a href="https://github.com/Thibaut-B/Yo.css/archive/master.zip"><i class="icon icon-download"></i></a></li>
+    </ul>
+    
+    <ul class="nav nav--block"> 
+      <li><a href="index.html">Yo.css</a></li>
+      <li><a href="http://thibaut-baillet.com" target="_blank">Author</a></li>
+      <li class="dropdown-toggle">
+        <a href="exemple.html">Exemple</a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="exemple.html#heading">Heading</a></li>
+          <li><a href="exemple.html#button">Button</a></li>
+          <li><a href="exemple.html#label">Label</a></li>
+          <li><a href="exemple.html#list">List</a></li>
+          <li><a href="exemple.html#pagination">Pagination</a></li>
+          <li><a href="exemple.html#breadcrumbs">Breadcrumbs</a></li>
+          <li><a href="exemple.html#form">Form</a></li>
+          <li><a href="exemple.html#img">Images</a></li>
         </ul>
-    </nav>
+      </li>
+    </ul>        
+  </nav>
 </header>
 
-<section class="container">
-    <h1>Heading</h1>
-    <p>Paragraphe Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. <strong>Vestibulum id ligula porta felis</strong> euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-    
-    <h1>Titre h1, .alpha</h1>
-    <h2>Titre h2, .beta</h2>
-    <h3>Titre h3, .gamma</h3>
-    <h4>Titre h4, .delta</h4>
-    <h5>Titre h5, .epsilon</h5>
-    <h6>Titre h5, .zeta</h6>
-</section>  
-
-<section class="container">
-    <h1>Bouton</h1>
-    
-    <h3>Normal</h3>
-    <p><a href="#" class="btn btn--green">Inviter vos amis</a></p>
-    
-    <h3>Bouton small, large and huge</h3>
+<section class="intro mb">
+  <div class="container">
+    <h1>Yo.css</h1>
+    <h2>A simple OOCSS Framework<br>thinks for front-end developer!</h2>
     <p>
-        <a href="#" class="btn btn--green btn--small">Supprimer ce compte</a>
-        <a href="#" class="btn btn--green btn--large">Link Text</a>
-        <a href="#" class="btn btn--green btn--huge">Link Text</a>
+      <a href="https://github.com/Thibaut-B/Yo.css" class="btn btn--red"><i class="icon icon-octopus"></i> View on Github</a>
+      <a href="https://github.com/Thibaut-B/Yo.css/archive/master.zip" class="btn btn--red"><i class="icon icon-download"></i> Download</a>
     </p>
-    
-    <h3>Full</h3>
-    <p>
-        <a href="#" class="btn btn--green btn--full">Link Text</a>
-    </p>
-    
-    <h3>Largeur fixe</h3>
-    <p>
-        <a href="#" class="btn btn--green btn--fixed">Link Text</a>
-    </p>
-    
-    <h3>Couleur</h3>
-    <p>
-        <a href="#" class="btn btn--red">Link Text</a>
-        <a href="#" class="btn btn--green">Link Text</a>
-        <a href="#" class="btn btn--blue">Link Text</a>
-        <a href="#" class="btn btn--white">Link Text</a>
-        <a href="#" class="btn btn--gray">Link Text</a>
-        <a href="#" class="btn btn--black">Link Text</a>
-        <a href="#" class="btn btn--blue--alt">Link Text</a>
-    </p>
-    <p style="background-color: #444; padding: 20px;">
-        <a href="#" class="btn btn--red">Link Text</a>
-        <a href="#" class="btn btn--green ">Link Text</a>
-        <a href="#" class="btn btn--yellow ">Link Text</a>
-        <a href="#" class="btn btn--white">Link Text</a>
-        <a href="#" class="btn btn--gray">Link Text</a>
-        <a href="#" class="btn btn--black">Link Text</a>
-        <a href="#" class="btn btn--blue--alt">Link Text</a>
-    </p>
-</section>  
-
-
-<section class="container">
-    <h1>List</h1>
-    <ul class="block-list">
-        <li><i class="icon icon-facebook"></i>Facebook</li>
-        <li><i class="icon icon-twitter "></i>Twitter</li>
-        <li><i class="icon icon-google_plus "></i>Google Plus</li>
-        <li><i class="icon icon-paperplane_ico "></i>Newsletter</li>
-    </ul>
+  </div>
 </section>
+
+<section class="container mb cf">
+
+  <h2 class="text--center">Keys features</h2>
+
+  <article>
+    <img src="gh-pages/img/vertical.jpg" alt="" />
+    <h3>Use vertical rhythm</h3>
+    <p>Give a vertical rhythm to your design with a suitable structure for that.</p>
+  </article>
   
-<section class="container">
-    <h1>Pagination</h1>
-    
-    <ul class="pagination">
-      <li><a href="#">&laquo; Précedent</a></li>
-      <li><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-      <li><a href="#">5</a></li>
-      <li><a href="#">Suivant &raquo;</a></li>
-    </ul>
-</section>
-
-<section class="container">
-    <h1>Breadcrumbs</h1>
-    
-    <ol class="breadcrumb">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Library</a></li>
-      <li class="active">Data</li>
-    </ol>
-</section>
-
-<section class="container">
-    <h1>Label</h1>
-    <p>
-      <span class="label label-gray">Gray</span>
-      <span class="label label-blue">Blue</span>
-      <span class="label label-green">Green</span>
-      <span class="label label-yellow">Yellow</span>
-      <span class="label label-red">Red</span>
-      <span class="label label-black">Black</span>
-    </p>
-</section>
+  <article>
+    <img src="gh-pages/img/bem.jpg" alt="" />
+    <h3>BEM naming</h3>
+    <p>The framework use a perfect naming methodology for OOCSS pathern.</p>
+  </article>
   
-<section class="container">
-    <h1>Form</h1>
-    <form method="post" action="" class="form--list">
-        <ul>
-            <li>
-                <label for=""><i class="icon icon-paperplane_ico"></i>Email</label>
-                <input type="text" placeholder="ryan@warnerbros.fr" name="" value="" />
-            </li>
-            <li>
-                <label for=""><i class="icon icon-user"></i>Prénom</label>
-                <input type="text" class="validate" placeholder="Ryan" name="" value="" />
-            </li>
-        </ul>
-    </form>
-    
-    <h1>Button form</h1>
-    <form>
-      <fieldset>
-        <p><input type="button" value="Input type button"></p>
-        <p><input type="reset" value="Input type reset"></p>
-        <p><input type="submit" value="Input type submit"></p>
-        <p><input type="submit" value="Input type submit disabled" disabled></p>
-        <p><button type="button">Button type button</button></p>
-        <p><button type="reset">Button type reset</button></p>
-        <p><button type="submit">Button type submit</button></p>
-        <p><button type="button" disabled>Button type button disabled</button></p>
-        <p><button>Button</button></p>
-      </fieldset>
-    </form>
-    
-    <h1>Form elements</h1>
-    <form>
-      <fieldset>
-        <div class="form-group"><label>Text input</label> <input type="text"></div>
-        <div class="form-group"><label>Text input with placeholder</label> <input type="text" placeholder="I'm placeholder text"></div>
-        <div class="form-group"><label>Readonly input</label> <input type="text" value="Read only text input" readonly></div>
-        <div class="form-group"><label>Disabled input</label> <input type="text" value="Disabled text input" disabled></div>
-        <div class="form-group"><label>Required input <span class="required">*</span></label> <input type="text" required></div>
-        <div class="form-group"><label>Email input</label> <input type="email"></div>
-        <div class="form-group"><label>Search input</label> <input type="search"></div>
-        <div class="form-group"><label>Speech recognition input</label> <input type="text" id="speech" name="speech" x-webkit-speech=""></div>
-      </fieldset>  
-    </form>
-    
-    <form class="form--inline">
-      <fieldset>
-        <p><label>Tel input</label> <input type="tel"></p>
-        <p><label>URL input</label> <input type="url" placeholder="http://"></p>
-        <p><label>Password input</label> <input type="password" value="password"></p>
-        <p><label>Select field</label> <select><option>Option 01</option><option>Option 02</option></select></p>
-        <div class="form-group"><label><input type="checkbox"> Checkbox input</label></div>
-        <div class="form-group"><label>File input</label> <input type="file"></div>
-        <div class="form-group"><label>Textarea</label> <textarea cols="30" rows="5" >Textarea text</textarea></div>
-        <div class="form-group"><label><input type="checkbox"> Checkbox input</label></div>
-        <div class="form-group"><label><input type="radio" name="rad"> Radio input</label></div>
-      </fieldset>  
-    </form>
-</section>  
-
-<section class="container">
-    <h1>Radio boutton</h1>
-    
-    <p><label><input type="radio" name="rad"> Radio input</label></p>
-    <p><label><input type="radio" name="rad" checked="checked"> Radio input</label></p>
+  <article>
+    <img src="gh-pages/img/themes.jpg" alt="" />
+    <h3>Set your theme</h3>
+    <p>It's easy to design each object with a simple theme file.</p>
+  </article>
 </section>
 
-<section class="container">
-    <h1>Checkbox</h1>
-    
-    <p>
-        <label><input type="checkbox"> Label</label>
-    </p>
-    <p>
-        <label><input type="checkbox" checked="checked"> Label</label>
-    </p>
+<section class="container mb text--center">
+  <h2 class="">Licences</h2>
+  <p>
+    <strong>Creative common attribution licenses</strong><br>
+    Licenses may copy, distribute, display and perform the work and make derivative works based on it only if they give the author or licensor the credits in the manner specified by these.
+    <br>
+    <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">MFG Labs icon set</span> from <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.mfglabs.com" property="cc:attributionName" rel="cc:attributionURL">MFG Labs</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.fr">Creative Commons Attribution 3.0 License</a>.<br>
+    <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.fr"><img alt="Licence Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png"></a>
+  </p>
 </section>
 
-
-<section class="container">
-    <h1>Image</h1>
-    
-    <p>
-        <img src="http://lorempicsum.com/simpsons/200/200/2" class="round"/>
-        <img src="http://lorempicsum.com/simpsons/200/200/3" class="circled"  />
-    </p>
-</section>  
-
-
-
-
-<!--
-<section class="container">
-    <h1>User stat</h1>
-    
-    <section class="stat text--container">
-        <dl class="stat-cell">
-            <dd class="stat-value">50/50</dd>
-            <dt class="stat-title">Actions</dt>
-        </dl>
-
-        <dl class="stat-cell">
-            <dt class="stat-value">08</dt>
-            <dd class="stat-title">Badges</dd>
-        </dl>
-
-        <dl class="stat-cell">
-            <dt class="stat-value">02</dt>
-            <dd class="stat-title">Challenges</dd>
-        </dl>
-        
-        <dl class="stat-cell">
-            <dt class="stat-value">16859</dt>
-            <dd class="stat-title">Points</dd>
-        </dl>
-    </section>
-</section>  
--->
+<section class="container mb">
+  <h2 class="text--center">Thanks you</h2>
+  
+  <div class="feedback">
+    <p><strong>Send us your feedback</strong></br>Our work isn’t perfect so far, let us know if you want to contribute by sending us some feedback. Contact us via Twitter or Github.</p>
+    <a href="https://twitter.com/bailletthibaut" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @bailletthibaut</a>
+    <iframe src="http://ghbtns.com/github-btn.html?user=thibaut-b&repo=Yo.css&type=watch&count=true"
+      allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+  </div>
+</section>
 
 
 <div class="grid-horizontal"></div>
 <div class="grid-vertical"></div>
     
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 
 </body>
 </html>

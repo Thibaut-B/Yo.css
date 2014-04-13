@@ -96,6 +96,7 @@
 }
 
 
+
 /*
   <header class="navbar">
    <ul class="nav nav--block">
@@ -109,6 +110,8 @@
 .navbar {
     background-color: map-get($themes-nav, background);
     margin-bottom: $base-line-height;
+    color: map-get($themes-nav, text);
+    font-weight: bold;
     
     a{
         color: map-get($themes-nav, text);
@@ -120,6 +123,21 @@
     }
 }
 
+/*
+  <header class="navbar navbar--fixed">
+   <ul class="nav nav--block">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ </header>
+*/
+.navbar--fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 
 /*
@@ -144,7 +162,11 @@
     background-color: map-get($themes-nav, background);
     display: none;
     
-    a { @extend .btn; }
+    a { 
+      @extend .btn; 
+      width: 100%;
+      border-radius:0;
+    }
 }
 
 

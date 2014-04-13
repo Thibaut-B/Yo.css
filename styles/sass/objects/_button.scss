@@ -8,7 +8,9 @@ button {
     border:none;                
     margin:0;                      
     padding: 0 1em;
-    line-height: 2.4;          
+    line-height: 2.4;      
+    font-weight: 700;    
+    border-radius: $brand-round;
 }
 
 .btn--small {

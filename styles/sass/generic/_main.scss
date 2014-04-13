@@ -14,7 +14,7 @@ html{
 
 /*Heading*/
 h1, h2, h3, h4, h5, h6{
-    font-weight: 400;
+    font-weight: 700;
     margin-top: 0;
     margin-bottom: $base-line-height;
 }
@@ -25,12 +25,12 @@ p{
     @include font-size($base-font-size); 
 }
 
-h1, .heading--1{ @include font-size($h1-size); }
-h2, .heading--2{ @include font-size($h2-size); }
-h3, .heading--3{ @include font-size($h3-size); }
-h4, .heading--4{ @include font-size($h4-size); }
-h5, .heading--5{ @include font-size($h5-size); }
-h6, .heading--6{ @include font-size($h6-size); }
+h1, .h1{ @include font-size($h1-size); }
+h2, .h2{ @include font-size($h2-size); }
+h3, .h3{ @include font-size($h3-size); }
+h4, .h4{ @include font-size($h4-size); }
+h5, .h5{ @include font-size($h5-size); }
+h6, .h6{ @include font-size($h6-size); }
 .giga{ @include font-size($giga-size); }
 .mega{ @include font-size($mega-size); }
 .kilo{ @include font-size($kilo-size); }

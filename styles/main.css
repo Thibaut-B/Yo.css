@@ -122,7 +122,7 @@ audio:not([controls]) {
 html {
   background: #fff;
   /* 1 */
-  color: #000;
+  color: #404040;
   /* 2 */
   font-family: sans-serif;
   /* 3 */
@@ -1225,7 +1225,7 @@ html {
 
 /*Heading*/
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
+  font-weight: 700;
   margin-top: 0;
   margin-bottom: 24px;
 }
@@ -1238,37 +1238,37 @@ p {
   line-height: 1.5;
 }
 
-h1, .heading--1 {
+h1, .h1 {
   font-size: 40px;
   font-size: 2.5rem;
   line-height: 1.2;
 }
 
-h2, .heading--2 {
+h2, .h2 {
   font-size: 34px;
   font-size: 2.125rem;
   line-height: 1.41176;
 }
 
-h3, .heading--3 {
+h3, .h3 {
   font-size: 28px;
   font-size: 1.75rem;
   line-height: 1.71429;
 }
 
-h4, .heading--4 {
+h4, .h4 {
   font-size: 22px;
   font-size: 1.375rem;
   line-height: 1.09091;
 }
 
-h5, .heading--5 {
+h5, .h5 {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-h6, .heading--6 {
+h6, .h6 {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
@@ -1433,6 +1433,8 @@ button {
   margin: 0;
   padding: 0 1em;
   line-height: 2.4;
+  font-weight: 700;
+  border-radius: 4px;
 }
 
 .btn--small {
@@ -1834,14 +1836,32 @@ li > ol {
  </header>
 */
 .navbar {
-  background-color: #2c3e50;
+  background-color: #c0392b;
   margin-bottom: 24px;
+  color: white;
+  font-weight: bold;
 }
 .navbar a {
   color: white;
 }
 .navbar a:hover, .navbar a.current {
-  background-color: #354b60;
+  background-color: #d14233;
+}
+
+/*
+  <header class="navbar navbar--fixed">
+   <ul class="nav nav--block">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ </header>
+*/
+.navbar--fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 /*
@@ -1863,8 +1883,12 @@ li > ol {
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  background-color: #2c3e50;
+  background-color: #c0392b;
   display: none;
+}
+.dropdown-menu a {
+  width: 100%;
+  border-radius: 0;
 }
 
 .popin,
@@ -2076,3 +2100,40 @@ td {
 }
 
 /*Include your view here*/
+/*
+Css used by Github page
+*/
+body {
+  padding-top: 48px;
+}
+
+.intro {
+  padding-top: 48px;
+  min-height: 450px;
+  background-color: #e74c3c;
+  color: white;
+}
+.intro h2 {
+  font-weight: 400;
+}
+.intro .btn--red {
+  border: 2px solid #FFF;
+}
+
+article {
+  width: 33%;
+  float: left;
+  padding: 15px;
+}
+
+.feedback {
+  background-color: #f6f6f6;
+  border: 1px solid #d7d7d7;
+  padding: 12px;
+  max-width: 450px;
+  margin: 0 auto 24px;
+}
+
+.mb {
+  margin-bottom: 72px;
+}

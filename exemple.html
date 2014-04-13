@@ -16,39 +16,49 @@
 <body>
 
 
-<header class="navbar">
-    <nav class="container">
-        <ul class="nav nav--block"> 
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li class="dropdown-toggle">
-                <a href="#">Licence</a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Dropdown link</a></li>
-                  <li><a href="#">Dropdown link</a></li>
-                </ul>
-            </li>
+<header class="navbar navbar--fixed">
+  <nav class="container">
+    <ul class="nav nav--block float--right"> 
+        <li><a href="#"><i class="icon icon-download"></i></a></li>
+    </ul>
+    
+    <ul class="nav nav--block"> 
+      <li><a href="index.html">Yo.css</a></li>
+      <li><a href="http://thibaut-baillet.com" target="_blank">Author</a></li>
+      <li class="dropdown-toggle">
+        <a href="exemple.html">Exemple</a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="exemple.html#heading">Heading</a></li>
+          <li><a href="exemple.html#button">Button</a></li>
+          <li><a href="exemple.html#label">Label</a></li>
+          <li><a href="exemple.html#list">List</a></li>
+          <li><a href="exemple.html#pagination">Pagination</a></li>
+          <li><a href="exemple.html#breadcrumbs">Breadcrumbs</a></li>
+          <li><a href="exemple.html#form">Form</a></li>
+          <li><a href="exemple.html#img">Images</a></li>
         </ul>
-    </nav>
+      </li>
+    </ul>        
+  </nav>
 </header>
 
-<section class="container">
+<section class="container" id="heading">
     <h1>Heading</h1>
     <p>Paragraphe Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. <strong>Vestibulum id ligula porta felis</strong> euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
     
-    <h1>Titre h1, .alpha</h1>
-    <h2>Titre h2, .beta</h2>
-    <h3>Titre h3, .gamma</h3>
-    <h4>Titre h4, .delta</h4>
-    <h5>Titre h5, .epsilon</h5>
-    <h6>Titre h5, .zeta</h6>
+    <h1>Title h1, .h1</h1>
+    <h2>Title h2, .h2</h2>
+    <h3>Title h3, .h3</h3>
+    <h4>Title h4, .h4</h4>
+    <h5>Title h5, .h5</h5>
+    <h6>Title h5, .h6</h6>
 </section>  
 
-<section class="container">
-    <h1>Bouton</h1>
+<section class="container" id="button">
+    <h1>Button</h1>
     
     <h3>Normal</h3>
-    <p><a href="#" class="btn btn--green">Inviter vos amis</a></p>
+    <p><a href="#" class="btn btn--green">Invite your friends</a></p>
     
     <h3>Bouton small, large and huge</h3>
     <p>
@@ -62,12 +72,12 @@
         <a href="#" class="btn btn--green btn--full">Link Text</a>
     </p>
     
-    <h3>Largeur fixe</h3>
+    <h3>Width fixe</h3>
     <p>
         <a href="#" class="btn btn--green btn--fixed">Link Text</a>
     </p>
     
-    <h3>Couleur</h3>
+    <h3>Color</h3>
     <p>
         <a href="#" class="btn btn--red">Link Text</a>
         <a href="#" class="btn btn--green">Link Text</a>
@@ -89,7 +99,7 @@
 </section>  
 
 
-<section class="container">
+<section class="container" id="list">
     <h1>List</h1>
     <ul class="block-list">
         <li><i class="icon icon-facebook"></i>Facebook</li>
@@ -99,21 +109,21 @@
     </ul>
 </section>
   
-<section class="container">
+<section class="container" id="pagination">
     <h1>Pagination</h1>
     
     <ul class="pagination">
-      <li><a href="#">&laquo; Précedent</a></li>
+      <li><a href="#">&laquo; Previous</a></li>
       <li><a href="#">1</a></li>
       <li><a href="#">2</a></li>
       <li><a href="#">3</a></li>
       <li><a href="#">4</a></li>
       <li><a href="#">5</a></li>
-      <li><a href="#">Suivant &raquo;</a></li>
+      <li><a href="#">Next &raquo;</a></li>
     </ul>
 </section>
 
-<section class="container">
+<section class="container" id="breadcrumbs">
     <h1>Breadcrumbs</h1>
     
     <ol class="breadcrumb">
@@ -123,19 +133,19 @@
     </ol>
 </section>
 
-<section class="container">
+<section class="container" id="label">
     <h1>Label</h1>
     <p>
-      <span class="label label-gray">Gray</span>
-      <span class="label label-blue">Blue</span>
-      <span class="label label-green">Green</span>
-      <span class="label label-yellow">Yellow</span>
-      <span class="label label-red">Red</span>
-      <span class="label label-black">Black</span>
+      <span class="label label--gray">Gray</span>
+      <span class="label label--blue">Blue</span>
+      <span class="label label--green">Green</span>
+      <span class="label label--yellow">Yellow</span>
+      <span class="label label--red">Red</span>
+      <span class="label label--black">Black</span>
     </p>
 </section>
   
-<section class="container">
+<section class="container" id="form">
     <h1>Form</h1>
     <form method="post" action="" class="form--list">
         <ul>
@@ -144,7 +154,7 @@
                 <input type="text" placeholder="ryan@warnerbros.fr" name="" value="" />
             </li>
             <li>
-                <label for=""><i class="icon icon-user"></i>Prénom</label>
+                <label for=""><i class="icon icon-user"></i>Firstname</label>
                 <input type="text" class="validate" placeholder="Ryan" name="" value="" />
             </li>
         </ul>
@@ -195,7 +205,7 @@
 </section>  
 
 <section class="container">
-    <h1>Radio boutton</h1>
+    <h1>Radio button</h1>
     
     <p><label><input type="radio" name="rad"> Radio input</label></p>
     <p><label><input type="radio" name="rad" checked="checked"> Radio input</label></p>
@@ -213,7 +223,7 @@
 </section>
 
 
-<section class="container">
+<section class="container" id="img">
     <h1>Image</h1>
     
     <p>
