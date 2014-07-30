@@ -3,7 +3,10 @@
 
 form { margin-bottom: $base-line-height; }
 fieldset { padding:$base-spacing-unit; }
-label { display: block; }
+label { 
+    display: block; 
+    @include vendor(user-select, none);
+}
 
 input, 
 select, 

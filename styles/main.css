@@ -1549,6 +1549,11 @@ fieldset {
 
 label {
   display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
 input,
@@ -2098,6 +2103,9 @@ td {
   content: "/\00a0";
   padding: 0 5px;
 }
+.breadcrumb li.active {
+  cursor: default;
+}
 
 /*Include your view here*/
 /*
@@ -2137,3 +2145,5 @@ article {
 .mb {
   margin-bottom: 72px;
 }
+
+/*# sourceMappingURL=main.css.map */
