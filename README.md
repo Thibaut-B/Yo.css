@@ -5,7 +5,7 @@ A simple OOCSS Framework thinks for front-end developer!
 
 #Installation Sass (3.3 minimum required)
 <pre>
-  gem install sass -v 3.3 
+  gem install sass -v '~> 3.3'
 </pre>
 
 ##Compile main.scss to main.css
