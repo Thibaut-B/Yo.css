@@ -18,8 +18,8 @@ A simple OOCSS Framework thinks for front-end developer!
 Yo.css is inspired by the work of great people and include their best practice
 
 * **[Nicole Sullivan](https://twitter.com/stubbornella)** for her work on OOCSS
-* **[Mark Otto](https://twitter.com/mdo)** for her code guide and Twitter Bootstrap
-* **[Harry Roberts](https://twitter.com/csswizardry)** for her excellent framework inuit.css
+* **[Mark Otto](https://twitter.com/mdo)** for his css guideline and Twitter Bootstrap
+* **[Harry Roberts](https://twitter.com/csswizardry)** for his excellent framework inuit.css
 
 ##Licenses
 All the project are distributed under
